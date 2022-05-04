@@ -28,7 +28,6 @@ body{
 
 #to-do-list{
     width: 90%;
-    background-color:burlywood;
     margin: 0 auto;
 }
 
@@ -37,6 +36,16 @@ body{
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    background-color:burlywood;
+    margin-top: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+h2{
+    background-color:burlywood;
+    margin-top: 10px;
+    padding: 5px 5px;
 }
 
 #to-do-list li i{

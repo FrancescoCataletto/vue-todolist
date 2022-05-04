@@ -23,9 +23,9 @@
             <button>Aggiungi</button>
         </div>
 
-        <div id="to-do-list">
+        <div id="to-do-list" v-for="task in toDoArr">
             <ul>
-                <li>CIAO <i class="fa-solid fa-trash-can"></i></li>
+                <li>{{task.text}}</li>
             </ul>
         </div>
 

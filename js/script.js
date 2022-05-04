@@ -25,6 +25,13 @@ const app = new Vue({
 
     data: {
 
+        toDoArr: [
+            {
+                text: "text",
+                done: false
+            }
+        ]
+
     }
 
 })

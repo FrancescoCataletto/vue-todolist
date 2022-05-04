@@ -26,34 +26,26 @@ const app = new Vue({
     data: {
 
         toDoArr: [
-            {
-                text: "text",
-                done: false
-            },
-            {
-                text: "text",
-                done: false
-            },
-            {
-                text: "text",
-                done: false
-            },
-            {
-                text: "text",
-                done: false
-            },
-            {
-                text: "text",
-                done: false
-            }
-        ]
+            
+        ],
+
+        newToDo: ""
 
     },
 
     methods:{
         remove(index){
             this.toDoArr.splice(index, 1)
+        },
+
+        add(){
+            this.toDoArr.push({
+                text: this.newToDo,
+                done: false
+            })
         }
     }
-
+    
 })
+
+

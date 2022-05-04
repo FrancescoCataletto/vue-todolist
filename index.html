@@ -19,14 +19,12 @@
     <div id="app">
 
         <div id="add-to-list">
-            <input type="text" name="" id="">
-            <button>Aggiungi</button>
+            <input type="text" name="" id="" placeholder="cose da fare..." v-model="newToDo">
+            <button @click="add()">Aggiungi</button>
         </div>
 
-        <div id="to-do-list" 
-             v-for="(task, index) in toDoArr"
-             >
-            <ul>
+        <div id="to-do-list">
+            <ul v-for="(task, index) in toDoArr">
                 <li :class="{textdecoration: task.done}">{{task.text}}<i class="fa-solid fa-trash-can" @click="remove(index)"></i></li>
             </ul>
         </div>

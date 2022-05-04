@@ -27,6 +27,7 @@
             <ul v-for="(task, index) in toDoArr">
                 <li :class="{textdecoration: task.done}">{{task.text}}<i class="fa-solid fa-trash-can" @click="remove(index)"></i></li>
             </ul>
+            <h1 v-if="toDoArr.length === 0">Non ci sono cose da fare</h1>
         </div>
 
     </div>

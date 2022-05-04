@@ -24,10 +24,10 @@
         </div>
 
         <div id="to-do-list" 
-             v-for="task in toDoArr"
+             v-for="(task, index) in toDoArr"
              >
             <ul>
-                <li :class="{textdecoration: task.done}">{{task.text}}</li>
+                <li :class="{textdecoration: task.done}">{{task.text}}<i class="fa-solid fa-trash-can" @click="remove(index)"></i></li>
             </ul>
         </div>
 

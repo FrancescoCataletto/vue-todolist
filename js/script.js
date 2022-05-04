@@ -29,17 +29,31 @@ const app = new Vue({
             {
                 text: "text",
                 done: false
+            },
+            {
+                text: "text",
+                done: false
+            },
+            {
+                text: "text",
+                done: false
+            },
+            {
+                text: "text",
+                done: false
+            },
+            {
+                text: "text",
+                done: false
             }
         ]
 
-    }
+    },
 
-    // methods:{
-    //     taskDone(){
-    //         if(this.done){
-                
-    //         }
-    //     }
-    // }
+    methods:{
+        remove(index){
+            this.toDoArr.splice(index, 1)
+        }
+    }
 
 })

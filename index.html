@@ -19,7 +19,7 @@
     <div id="app">
 
         <div id="add-to-list">
-            <input type="text" name="" id="" placeholder="cose da fare..." v-model="addToDo">
+            <input type="text" name="" id="" placeholder="cose da fare..." v-model.trim="addToDo">
             <button @click="add()">Aggiungi</button>
         </div>
 

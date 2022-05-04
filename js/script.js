@@ -43,6 +43,10 @@ const app = new Vue({
                 text: this.addToDo,
                 done: false
             })
+        },
+
+        taskDone(index){
+            return this.toDoArr[index].done = !this.toDoArr[index].done
         }
     }
     

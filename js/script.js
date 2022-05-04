@@ -29,7 +29,7 @@ const app = new Vue({
             
         ],
 
-        newToDo: ""
+        addToDo: ""
 
     },
 
@@ -40,7 +40,7 @@ const app = new Vue({
 
         add(){
             this.toDoArr.push({
-                text: this.newToDo,
+                text: this.addToDo,
                 done: false
             })
         }

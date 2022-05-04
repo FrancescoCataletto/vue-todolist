@@ -35,14 +35,19 @@ const app = new Vue({
 
     methods:{
         remove(index){
-            this.toDoArr.splice(index, 1)
+            if(confirm("Vuoi cancellare la task dalla lista?")){
+                this.toDoArr.splice(index, 1)
+            }
         },
 
         add(){
-            this.toDoArr.push({
-                text: this.addToDo,
-                done: false
-            })
+            if(this.addToDo.length >1){
+                this.toDoArr.push({
+                    text: this.addToDo,
+                    done: false
+                })
+            }
+            this.addToDo = ""
         },
 
         taskDone(index){

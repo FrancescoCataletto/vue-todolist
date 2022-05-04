@@ -38,3 +38,7 @@ body{
     align-items: center;
     list-style: none;
 }
+
+.textdecoration{
+    text-decoration: line-through;
+}

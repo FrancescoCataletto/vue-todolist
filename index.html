@@ -23,9 +23,11 @@
             <button>Aggiungi</button>
         </div>
 
-        <div id="to-do-list" v-for="task in toDoArr">
+        <div id="to-do-list" 
+             v-for="task in toDoArr"
+             >
             <ul>
-                <li>{{task.text}}</li>
+                <li :class="{textdecoration: task.done}">{{task.text}}</li>
             </ul>
         </div>
 

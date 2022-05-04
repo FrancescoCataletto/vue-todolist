@@ -34,4 +34,12 @@ const app = new Vue({
 
     }
 
+    // methods:{
+    //     taskDone(){
+    //         if(this.done){
+                
+    //         }
+    //     }
+    // }
+
 })
